@@ -28,4 +28,3 @@ out lines 432 - 447, or hold enter.
 --Lucas Burns
 
 <mailto:lucas@burns.io> 
-![Burd](Cleaver/bird.jpg =50x50)

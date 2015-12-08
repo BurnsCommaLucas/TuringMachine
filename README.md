@@ -25,6 +25,6 @@ will be the first string the TM encounters.)
 out lines 432 - 447, or hold enter.
 
 
---Lucas Burns
+--Lucas Burns :squirrel:
 
 <mailto:lucas@burns.io> 

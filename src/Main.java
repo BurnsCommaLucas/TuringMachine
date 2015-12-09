@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class Main
 {
 	// Spacer to be printed in between each printout of the state
-    final static String SPACER = "------------------------------------------";
+    final static String SPACER = "==========================================";
     
     // Static variable to hold the original input without having to pass it through a bunch
     public static String initialIn = "";

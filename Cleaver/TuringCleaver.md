@@ -29,4 +29,30 @@ controls: false
 
 -- 
 
+### Code Sample
+
+```
+    public static void q3(String input, String pointer, int index)
+    {
+        // Reset condition
+        if (input.charAt(index) == 'c' || input.charAt(index) == '_')
+        {
+            // Move pointer left + retrieve outputs
+            String[] output = left(input, pointer, index);
+            input = output[0];
+            pointer = output[1];
+            index = output[2].length();
+            printState(input, pointer);
+
+            q4(input, pointer, index);
+        }
+        else
+        {
+            qReject(input, index);
+        }
+    }
+```
+
+--
+
 ### And now a demonstration...

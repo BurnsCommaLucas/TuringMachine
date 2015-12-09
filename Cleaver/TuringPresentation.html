@@ -723,6 +723,29 @@ code {
 
   </section>
   <section>
+    <h3 id="code-sample">Code Sample</h3>
+<pre><code>    public static void q3(String input, String pointer, int index)
+    {
+        // Reset condition
+        if (input.charAt(index) == &#39;c&#39; || input.charAt(index) == &#39;_&#39;)
+        {
+            // Move pointer left + retrieve outputs
+            String[] output = left(input, pointer, index);
+            input = output[0];
+            pointer = output[1];
+            index = output[2].length();
+            printState(input, pointer);
+
+            q4(input, pointer, index);
+        }
+        else
+        {
+            qReject(input, index);
+        }
+    }</code></pre>
+
+  </section>
+  <section>
     <h3 id="and-now-a-demonstration-">And now a demonstration...</h3>
 
   </section>

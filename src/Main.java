@@ -15,7 +15,7 @@ import java.util.Scanner;
  *
  * @author Lucas Burns
  *
- * @version 1 Dec 2015 Original functionality.
+ * @version 22 Feb 2016 Fixed empty string input error
  */
 public class Main
 {
@@ -78,6 +78,21 @@ public class Main
             {
                 break;
             }
+        }
+
+        if (counter == 0)
+        {
+            // Intro
+            System.out.println(SPACER);
+            System.out.println("Initial state:");
+            System.out.println("Press [ENTER] to advance simulation.");
+            printState(input, pointer);
+
+            // But alas, you entered nothing (or only whitespace)
+            // and so nothing happens. Good job. I mean, it *technically* works,
+            // but uh... why would you even do that?
+            qAccept();
+            System.exit(0);
         }
 
         input = input.substring(counter);
@@ -492,7 +507,8 @@ public class Main
         }
 
         // Output array (I really didn't want to make arraylists so the index is expressed as 
-        // a number of spaces equal to the index
+        // a number of spaces equal to the index.)
+        // DON'T JUDGE ME, I WAS TIRED. YOU WOULD HAVE DONE THE SAME.
         String[] output = new String[3];
         output[0] = input;
         output[1] = pointer;
@@ -543,6 +559,7 @@ public class Main
             }
         }
 
+        // Yeah, yeah, poorly coded, I know.
         String[] output = new String[3];
         output[0] = input;
         output[1] = pointer;

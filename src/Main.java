@@ -80,7 +80,7 @@ public class Main
             }
         }
 
-        if (counter == 0)
+        if (input.length() == 0)
         {
             // Intro
             System.out.println(SPACER);

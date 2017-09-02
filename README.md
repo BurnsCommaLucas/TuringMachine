@@ -1,5 +1,5 @@
-#README:
-###Using Main.java in Turing machine project:
+# TuringMachine
+### Usage
 
 Open the whole project in IntelliJ (although I think Main.java can be opened by itself
 in Eclipse). If no SDK is defined, use 1.6 or higher. I have tested this with 1.6 and 1.8,
@@ -8,7 +8,7 @@ import is Scanners for user input.
 
 Main is located in `/src/Turing/`
 
-###Tips:
+### Tips
 - Leading underscores (which represent spaces) and any leading or trailing whitespace in
 input strings are trimmed to ensure that the TM begins at the leftmost character of the
 actual input.
@@ -23,8 +23,3 @@ will be the first string the TM encounters.)
 
 - To test inputs without having to press enter every time to advance the simulation, comment
 out lines 432 - 447, or hold enter.
-
-
---Lucas Burns :squirrel:
-
-<mailto:lucas@burns.io> 

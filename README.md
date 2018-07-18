@@ -1,6 +1,10 @@
 # TuringMachine
 ### Usage
 
+## USE WIP BRANCH FOR NOW
+
+git pushed to master even though I specified WIP, so master is broken at the moment.
+
 Open the whole project in IntelliJ (although I think Main.java can be opened by itself
 in Eclipse). If no SDK is defined, use 1.6 or higher. I have tested this with 1.6 and 1.8,
 I have no idea if any older versions will work, although I assume they will as the only
